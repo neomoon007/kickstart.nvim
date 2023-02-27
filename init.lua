@@ -28,9 +28,6 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require('lazy').setup({
-  -- Detect tabstop and shiftwidth automatically
-  'tpope/vim-sleuth',
-
   { -- LSP Configuration & Plugins
     'neovim/nvim-lspconfig',
 
@@ -179,6 +176,12 @@ vim.o.wrap = false
 
 -- 'Margin' from screen bottom
 vim.o.scrolloff = 8
+
+-- Tab settings
+vim.opt.tabstop = 4
+vim.opt.softtabstop = 4
+vim.opt.shiftwidth = 4
+vim.opt.expandtab = true
 
 
 -- [[ Basic Keymaps ]]
